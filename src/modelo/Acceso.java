@@ -25,8 +25,6 @@ public class Acceso {
 	InputStreamReader conversor = null;
 	BufferedReader buffer = null;
 
-	// String cadenaParcial="";
-
 	public void conseguirCadena(Libro libro, JTextArea area) {
 		file = new File(libro.getLectura());
 		if (file.exists()) {
@@ -58,20 +56,6 @@ public class Acceso {
 		}
 
 	}
-
-	/*
-	 * public void imprimirEnTextArea(JTextArea area, Libro libro){ int cont=0;
-	 * for (int i = 0; i < cadenaParcial.length(); i++) {
-	 * if((long)i>=libro.getPaginas().get(libro.getActual()).getPrimerCaracter()
-	 * &&
-	 * (long)i<=libro.getPaginas().get(libro.getActual()).getUltimoCaracter()) {
-	 * area.setText(area.getText().concat(""+cadenaParcial.charAt(i)));
-	 * if(cont==Constantes.tamanioAncho) {
-	 * area.setText(area.getText().concat("\n")); cont=0; } cont++; char
-	 * cosilla= '\n'; } }
-	 * 
-	 * }
-	 */
 
 	public void imprimirPagina(Libro libro, JTextArea area) {
 		conseguirCadena(libro, area);

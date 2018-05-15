@@ -16,25 +16,8 @@ public class Libro implements Legible{
 		this.marca=0;
 		this.lectura="ready.txt"; 
 		paginas.add(new Pagina(0, 9));
-		//inicializarPaginas();
 	}
-	
-	/**
-	 * mete todas las paginas en "paginas"
-	 */
-	/*public void inicializarPaginas()
-	{
-		long primero=0;
-		long ultimo=Constantes.maxCaracteres;
-		paginas= new ArrayList<>();
 		
-		for (int i = 0; i <  Constantes.caracteresLibro; i++) {
-			paginas.add(new Pagina(primero, ultimo));
-			primero=ultimo+1;
-			ultimo=ultimo+Constantes.maxCaracteres;
-		}
-		
-	}*/
 	/**
 	 * vas a la siguiente página
 	 */
