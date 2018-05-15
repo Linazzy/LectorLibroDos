@@ -64,6 +64,7 @@ public class ParaLectorUI extends LectorUI {
 	public void actualizarLibro() {
 		getTextArea().setText("");
 		acceso.imprimirPagina(libro, getTextArea());
+		getLblNumeroPagina().setText(libro.getActual()+"");
 	}
 
 }
